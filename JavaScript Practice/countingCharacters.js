@@ -56,3 +56,26 @@ function addTwoNumbers(firstNumber, secondNumber){
   //Adds two numbers
   return firstNumber + secondNumber;
 }
+
+function findMax(numArray) {
+  var maxNum;
+  for (var i = 0; i < numArray.length; i++){
+    if (i == 0) {
+      //Assign MaxNum the first value in the array
+      maxNum = numArray[i];
+        }
+    else if (maxNum < numArray[i]){
+      //Assign MaxNum to the higher value
+      maxNum = numArray[i];
+      }
+    }
+  return maxNum;
+  }
+
+function sumOfArray(numArray) {
+    var sumArray = 0;
+    for (var i = 0; i <numArray.length; i++){
+      sumArray = sumArray + numArray[i];
+    }
+    return sumArray;
+  }

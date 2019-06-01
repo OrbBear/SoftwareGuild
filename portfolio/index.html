@@ -3,75 +3,126 @@
 <!--
 Name: Austin Capps
 Date Created: May 24, 2019
-Most Recent Revision: ATC 05.25.2019
+Most Recent Revision: ATC 05.26.2019
 -->
 <html>
   <head>
     <title>Austin's Portfolio</title>
+    <link href="styles/main.css" rel="stylesheet" type="text/css" />
+
+    <style>
+      caption {
+        font-weight: bold;
+        font-size: 1.2em;
+        margin-bottom: 8px;
+      }
+      table, th, td {
+        border: 1px solid #0d1f2d;
+        border-collapse: collapse;
+        padding: 5px 10px;
+      }
+      table {
+        width: 90%;
+        margin: auto;
+      }
+      tr {
+        height: 30px;
+      }
+      th {
+        background-color: #546a7b;
+        color: #f2eded;
+      }
+      tbody tr:nth-child(odd) {
+        background-color: #e4c3ab
+      }
+      /*could transfer to external*/
+
+      article img{
+        float:left;
+        padding-right: 5px;
+      }
+      .right-content{
+        float:left;
+      }
+      article{
+        margin-bottom: 16px;
+      }
+
+    </style>
   </head>
 
 
   <body>
     <header>
-      <h1><em>Portfolio for Austin Capps</em></h1>
+      <h1>Portfolio for Austin Capps</h1>
     </header>
 
-    <nav><!-- This element is to contain links ot project, contacts, and testimonals -->
-      <hr />
+    <nav><!-- This element is to contain links to project, contacts, and testimonals -->
       <p><a href ="projects.html">Projects</a></p>
       <p><a href ="contact.html">Contact</a></p>
       <p><a href ="testimonals.html">Testimonals</a></p>
-      <hr />
+      <div class="clear-float"></div>
     </nav>
 
     <section>
 
       <article>
-        <article id="about-me">
+        <article class="border" id="about-me">
         <h2><em>About Me</em></h2>
-        <img src="images/Austin.png" alt="Portrait of Austin Capps" />
+        <img src="images/Austin.png" alt="Portrait of Austin Capps" width="250" />
         <p>Austin Capps is a compliance professional and a software engineering
           student eager to take on new challenges in the exiciting field of Java
           development. Austin is currently located in the Dallas-Fort Worth area
-          after spending the last five years in Chicago.</p>
+          after spending the last five years in Chicago.
+        </p>
         <p>Austin Capps attended the University of Texas at Dallas and received a
           <strong>Bachelor's in Economics.</strong> Austin atttended DePaul University's Kellstadt Graduate
-          School of Business and received a <strong>Master's in Accountancy.</strong></p>
+          School of Business and received a <strong>Master's in Accountancy.</strong>
+        </p>
+        <div class="clear-float"></div>
       </article>
 
       <article>
         <article id="past-experiences">
         <h2><em>Past Experiences</em></h2>
-        <img src="images/Bookkeep.jpg" alt="Picture of an accountant's desk" />
+        <img src="images/consultant.jpg" alt="Picture of a consulting report" width="250"/>
+        <div class="right-content">
         <table>
           <caption>Employment History</caption>
-          <tr>
-            <th>Years of Employment</th>
-            <th>Title</th>
-            <th>Company</th>
-          </tr>
-          <tr>
-            <td>2019-present</td>
-            <td>Dev10 Candidate</td>
-            <td>Genesis10</td>
-          </tr>
-          <tr>
-            <td>2017-2019</td>
-            <td>Senior IT Auditor</td>
-            <td>Schellman & Co.</td>
-          </tr>
-          <tr>
-            <td>2015-2017</td>
-            <td>Senior IT Auditor</td>
-            <td>RSM LLP</td>
-          </tr>
+          <thead>
+            <tr>
+              <th>Years of Employment</th>
+              <th>Title</th>
+              <th>Company</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>2019-present</td>
+              <td>Dev10 Candidate</td>
+              <td>Genesis10</td>
+            </tr>
+            <tr>
+              <td>2017-2019</td>
+              <td>Senior IT Auditor</td>
+              <td>Schellman & Co.</td>
+            </tr>
+            <tr>
+              <td>2015-2017</td>
+              <td>Senior IT Auditor</td>
+              <td>RSM LLP</td>
+            </tr>
+          </tbody>
         </table>
+      </div>
+      <div class="clear-float"></div>
       </article>
 
       <article>
         <article id="hobbies">
         <h2><em>Hobbies</em></h2>
-        <img src="images/Rave.jpg" alt="Picture of an EDM party" />
+        <img src="images/DJ.jpg" alt="Picture of a DJ" width="250" />
+        <div class="right-content">
         <ul>
           <li>Point and Click Adventure Games</li>
           <ol>
@@ -85,9 +136,6 @@ Most Recent Revision: ATC 05.25.2019
             <li>Lights All Night</li>
             <li>Electric Daisy Carnival</li>
           </ol>
-        </ul>
-
-        <ul>
           <li>Authors</li>
           <ul>
             <li>John Scalzi</li>
@@ -101,10 +149,11 @@ Most Recent Revision: ATC 05.25.2019
             <li>Hieronymus Bosh</li>
           </ul>
         </ul>
+      </div>
+      <div class="clear-float"></div>
       </article>
 
     <footer>
-      <hr />
       <p>&copy; 2019 Austin Capps. All rights reserved.</p>
     </footer>
 

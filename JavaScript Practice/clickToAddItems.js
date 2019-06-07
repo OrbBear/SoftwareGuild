@@ -8,7 +8,7 @@ function clearErrors() {
       document.forms["numberFun"].elements[loopCounter]
       .parentElement.className = "form-group";
     }
-    }
+  }
 }
 function resetForm() {
   clearErrors();

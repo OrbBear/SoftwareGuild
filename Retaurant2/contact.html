@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!--
+    Name: Austin Capps
+    Date Created: May 26, 2019
+    Most recent revision: May 26, 2019
+-->
+<html lang="en">
+  <head>
+    <title>Contact Us</title>
+    <link href="styles/restaurantStyles.css" rel="stylesheet" type="text/css" />
+    <style>
+    label{
+      font-weight: bold;
+    }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h1>Dog Gone Good Hotdogs</h1>
+    </header>
+
+    <nav>
+      <!-- Same across the website, should be side by side after CSS-->
+      <hr />
+      <p><a href="index.html">Home</a></p>
+      <p><a href="menu.html">Menu</a></p>
+      <p><a href="contact.html">Contact Us</a></p>
+      <div class="clear-float"></div>
+      <hr />
+
+    </nav>
+
+    <section>
+      <!-- Contact form with Name, Email, Phone, Reason, Additional info,
+      attendance question, Best day for call back.
+      Should be centered after CSS-->
+      <form action ="submit.html" method="POST">
+        <label for="name">Name: </label><input type="text" id="name" name="name"><br />
+        <label for="email">Email: </label><input type="text" id="email" name="email"><br />
+        <label for="phone">Phone: </label><input type="text" id="phone" name="phone"><br />
+        <label for="reason">Reason for Inquiry: </label>
+        <select id="reason" name="reason">
+          <option value="default" selected>Catering</option>
+          <option value="party">Private party</option>
+          <option value="feedback">Feedback</option>
+          <option value="other">Other</option>
+        </select>
+        <br />
+        <label for="info">Additional Information: </label><textarea id="info" name="info"></textarea><br />
+        <!-- Will need to be formatted to be inline, centered, no boarder to match wireframe-->
+        <fieldset>
+          <legend>Have you been to the restaurant?</legend>
+          <input type="radio" id="choice1" name="attendance" value="yes">
+          <label for="choice1">Yes</label>
+          <input type="radio" id="choice2" name="attendance" value="no">
+          <label for="choice2">No</label>
+        </fieldset>
+        <!-- Will need to be formatted to be inline, centered, no boarder to match wireframe-->
+        <label for="contact">Best days to contact you:</label>
+        <fieldset>
+          <input type="checkbox" id="monday" name="contact" value="monday">
+          <label for="monday">M</label>
+          <input type="checkbox" id="tuesday" name="contact" value="tuesday">
+          <label for="monday">T</label>
+          <input type="checkbox" id="wednesday" name="contact" value="wednesday">
+          <label for="monday">W</label>
+          <input type="checkbox" id="thursday" name="contact" value="thursday">
+          <label for="monday">R</label>
+          <input type="checkbox" id="friday" name="contact" value="friday">
+          <label for="monday">F</label>
+        </fieldset>
+        <input type="submit" name="submit" value="Send Request">
+
+    <footer>
+      <!-- Same across website should center with CSS and be at bottom of page -->
+      <hr />
+      <p>1234 Dogwood Drive, Denton, Texas, 76205</p>
+      <p>940-011-8998</p>
+
+    </footer>
+  </body>
+  </html>

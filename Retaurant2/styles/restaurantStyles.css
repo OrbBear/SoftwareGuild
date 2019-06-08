@@ -1,0 +1,26 @@
+header{
+  text-align:center
+}
+footer{
+  text-align:center
+}
+
+nav a{
+  color: #fef9ff;
+  padding: 8px;
+  text-align: center;
+  width: 100px;
+  float:left;
+}
+nav a:visited{
+  color: #e4c3ad;
+}
+nav a:hover{
+  font-weight: bold;
+}
+nav a:active{
+  text-decoration:none;
+}
+.clear-float {
+  clear:both;
+}

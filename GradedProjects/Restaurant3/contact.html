@@ -37,28 +37,28 @@
     </nav>
 
         <form name="contactForm" onsubmit="return validateItems();">
-          <div class="form-group row">
+          <div class="form-group row justify-content-center">
             <label for "name" class="col-sm-3 col-form-label">Name:</label>
-            <div class="col-sm-8">
+            <div class="col-sm-4">
               <input type="text" class="form-control" id="name">
             </div>
           </div>
-          <div class="form-group row">
+          <div class="form-group row justify-content-center">
             <label for "email" class="col-sm-3 col-form-label">Email:</label>
-            <div class="col-sm-8">
+            <div class="col-sm-4">
               <input type="email" class="form-control" id="email">
             </div>
           </div>
-          <div class="form-group row">
+          <div class="form-group row justify-content-center">
             <label for "phone" class="col-sm-3 col-form-label">Phone:</label>
-            <div class="col-sm-8">
+            <div class="col-sm-4">
               <input type="text" class="form-control" id="phone">
             </div>
           </div>
 
-          <div class="form-group row">
+          <div class="form-group row justify-content-center">
             <label for "reason" class="col-sm-3 col-form-label">Reason for Inquiry:</label>
-            <div class="col-sm-8">
+            <div class="col-sm-4">
               <select class="form-control" id="reason">
                 <option value="default" selected>Catering</option>
                 <option value="party">Private party</option>
@@ -68,16 +68,16 @@
             </div>
           </div>
 
-          <div class="form-group row">
+          <div class="form-group row justify-content-center" rows="2">
             <label for "info" class="col-sm-3 col-form-label">Additional Information:</label>
-            <div class="col-sm-8">
-              <input type="text" class="form-control" id="info">
+            <div class="col-sm-4">
+              <textarea class="form-control" rows="2" id="info"></textarea>
             </div>
           </div>
 
-          <div class="form-group row">
+          <div class="form-group row justify-content-center">
             <label for "beenTo" class="col-sm-3 col-form-label">Have you been to the restaurant?</label>
-            <div class="col-sm-8">
+            <div class="col-sm-4">
               <div class="form-check-inline">
                 <input class="form-check-input" type="radio" name="beenTo" id="yes" value="yes">
                 <label class="form-check-label" for="yes">Yes</label>
@@ -89,10 +89,10 @@
             </div>
           </div>
 
-          <div class="form-group row">
+          <div class="form-group row justify-content-center">
             <label for "contact" class="col-sm-3 col-form-label">Best days to contact you:</label>
-            <div class="col-sm-8">
-            <fieldset>
+            <div class="col-sm-4">
+            <fieldset class="form-group">
               <div class="form-check form-check-inline">
                 <input class="form-check-input" type="checkbox" name="contact" id="monday" value="monday">
                 <label class="form-check-label" for="monday">M</label>
@@ -116,7 +116,9 @@
             </fieldset>
             </div>
           </div>
-          <button type="submit" class="btn btn-primary">Submit Request</button>
+          <div class="form-group row justify-content-center">
+            <button type="submit" class="btn btn-primary justify-content-center">Submit Request</button>
+          </div>
         </form>
 
 

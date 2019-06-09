@@ -1,5 +1,5 @@
 
-//Function takes an integer and rolls a die of the number.
+//Function takes an integer, numSides, and rolls a numSides sided die.
 function rollDice(numSides) {
   return Math.floor(Math.random() * numSides) + 1;
 }
@@ -15,41 +15,7 @@ function clearErrors() {
     }
   }
 }
-/* The function below should take a positive starting bet and
-play the game of sevens until the player loses.
 
-function luckySevens(startingBet){
-  //Set game money = startingBet
-  var gameMoney = startingBet;
-  //Dice variables
-  var die1;
-  var die2;
-  var sumOfDice;
-  //Result Variables
-  var totalRolls = 0;
-  var highestAmountWon = 0;
-  var highestAmountRollCount;
-  while (gameMoney > 0){
-    //Roll 2 6 sided die.
-    die1 = rollDice(6);
-    die2 = rollDice(6);
-    sumOfDice = die1 + die2;
-    totalRolls ++;
-    //Award player or remove money
-    if (sumOfDice = 7){
-      gameMoney = gameMoney + 4;
-    }
-    else{
-      gameMoney = gameMoney - 1;
-    }
-    if (highestAmountWon < gameMoney){
-      highestAmountWon = gameMoney;
-      highestAmountRollCount = totalRolls;
-    }
-  }
-}
-*/
-  //Validate user inputs
 function validateItems(){
   clearErrors();
   var startingBet = document.forms["luckySevens"]["startingBet"].value;
@@ -83,15 +49,18 @@ function validateItems(){
       else{
         gameMoney = gameMoney - 1;
       }
+      //I interpreted highest Amount Won as highest total cashroll.
+      //To get only winnings, you would subtract startingBet here i.e.:
+      //highestAmountWon = gameMoney - startingBet;
       if (highestAmountWon < gameMoney){
         highestAmountWon = gameMoney;
         highestAmountRollCount = totalRolls;
       }
     }
     document.getElementById("results").style.display = "block";
-    document.getElementById("startingBet1").innerText = startingBet;
-    document.getElementById("totalRolls1").innerText = totalRolls;
-    document.getElementById("highestAmountWon1").innerText = highestAmountWon;
-    document.getElementById("highestAmountRollCount1").innerText = highestAmountRollCount;
+    document.getElementById("startingBetResult").innerText = startingBet;
+    document.getElementById("totalRollsResult").innerText = totalRolls;
+    document.getElementById("highestAmountWonResult").innerText = highestAmountWon;
+    document.getElementById("highestAmountRollCountResult").innerText = highestAmountRollCount;
     return false;
   }

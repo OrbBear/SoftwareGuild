@@ -33,6 +33,7 @@ nav hr{
 }
 nav a{
   background-color: IndianRed;
+  color: yellow;
   width: 100px;
   padding: 5px;
 }
@@ -41,9 +42,11 @@ nav a:visited{
 }
 nav a:hover{
   font-weight: bold;
+  color: yellow;
 }
 nav a:active{
   text-decoration:none;
+  color: yellow;
 }
 footer{
   text-align:center;

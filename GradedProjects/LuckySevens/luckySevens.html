@@ -1,4 +1,9 @@
 <!DOCTYPE html>
+<!--
+    Name: Austin Capps
+    Date Created: June 07, 2019
+    Most recent revision: June 09, 2019
+-->
 <html>
 <head>
   <script type="text/Javascript" src="luckySevens.js"></script>
@@ -7,11 +12,11 @@
 <body>
       <form name="luckySevens" onsubmit="return validateItems();">
       <div class="form-group row justify-content-center">
-        <label for="heading" class="col-7 col-form-label"><h1 style="text-align: center;">Lucky Sevens</h1></label>
+        <label for="heading" class="col-4 col-form-label"><h1 style="text-align: center;">Lucky Sevens</h1></label>
       </div>
       <div class="form-group row justify-content-center">
-        <label for="startingNumber" class="col-3 col-form-label">Starting Bet: </label>
-        <div class="col-4">
+        <label for="startingNumber" class="col-2 col-form-label">Starting Bet: </label>
+        <div class="col-2">
           <input type="number" step=".01" class="form-control" id="startingBet">
         </div>
       </div>
@@ -22,18 +27,18 @@
 
     <div class="container" id="results" style="display:none;">
       <div class ="row justify-content-center">
-        <div class="col-7">
+        <div class="col-4">
           <hr>
         </div>
       </div>
       <div class="row justify-content-center">
-        <div class="col-7">
+        <div class="col-4">
           <h1 style="text-align: center;">Results</h1>
         </div>
       </div>
       <div class="row justify-content-center">
-        <div class="col-7">
-          <table class="table table-striped">
+        <div class="col-4">
+          <table class="table table-striped table-bordered">
             <tr>
               <td>Starting Bet</td>
               <td>$<span id="startingBetResult"></span></td>

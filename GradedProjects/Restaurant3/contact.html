@@ -2,7 +2,7 @@
 <!--
     Name: Austin Capps
     Date Created: May 26, 2019
-    Most recent revision: May 26, 2019
+    Most recent revision: June 09, 2019
 -->
 <html lang="en">
   <head>
@@ -21,7 +21,7 @@
     </header>
 
     <nav>
-      <!--Left aligned per original wireframe. Themed differently from rest of site to look like hotdogs-->
+      <!--Left aligned per original wireframe. Themed buttons to look like hotdogs-->
       <hr />
       <div class="container" id="nav">
         <div class="row align-items-center">
@@ -35,7 +35,7 @@
       <hr />
 
     </nav>
-
+    <!--form starts here-->
         <form name="contactForm" onsubmit="return validateItems();">
           <div class="form-group row justify-content-center">
             <label for "name" class="col-sm-3 col-form-label">Name:</label>
@@ -78,7 +78,7 @@
           <div class="form-group row justify-content-center">
             <label for "beenTo" class="col-sm-3 col-form-label">Have you been to the restaurant?</label>
             <div class="col-sm-4">
-              <div class="form-check-inline">
+              <div class="form-check-inline mt-2">
                 <input class="form-check-input" type="radio" name="beenTo" id="yes" value="yes">
                 <label class="form-check-label" for="yes">Yes</label>
               </div>
@@ -93,7 +93,7 @@
             <label for "contact" class="col-sm-3 col-form-label">Best days to contact you:</label>
             <div class="col-sm-4">
             <fieldset class="form-group">
-              <div class="form-check form-check-inline">
+              <div class="form-check form-check-inline mt-2">
                 <input class="form-check-input" type="checkbox" name="contact" id="monday" value="monday">
                 <label class="form-check-label" for="monday">M</label>
               </div>

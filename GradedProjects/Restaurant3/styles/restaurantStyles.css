@@ -1,10 +1,36 @@
 header{
-  text-align:center
+  text-align:center;
+  background-color:#e63946;
+  color:#e63946;
+  margin:0;
+  padding:0;
 }
-footer{
-  text-align:center
+.jumbotron{
+  background-color:#e63946;
+  margin-bottom:0;
 }
-
+.jumbotron h1{
+  color:#f1faee;
+}
+.jumbotron h2{
+  color:#f1faee;
+}
+body{
+  background-color:#f1faee;
+  margin:0;
+  padding:0;
+}
+body p{
+  color:#1d3557;
+}
+nav{
+  background-color:#a8dadc;
+  margin-top:0;
+}
+nav hr{
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
 nav a{
   background-color: IndianRed;
   width: 100px;
@@ -18,6 +44,14 @@ nav a:hover{
 }
 nav a:active{
   text-decoration:none;
+}
+footer{
+  text-align:center;
+  background-color:#457b9d;
+  box-shadow: 0 50vh 0 50vh #457b9d;
+}
+footer p{
+  color:#f1faee;
 }
 .clear-float {
   clear:both;

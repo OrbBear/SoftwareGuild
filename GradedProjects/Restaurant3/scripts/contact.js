@@ -1,5 +1,4 @@
 //Checks that data was provided. Does not currently check for formatting
-
 function validateItems() {
   var name = document.forms["contactForm"]["name"].value;
   var email = document.forms["contactForm"]["email"].value;
@@ -9,7 +8,6 @@ function validateItems() {
   var beenTo = document.forms["contactForm"]["beenTo"].value;
   var contact = checkedOrNot();
   if (name != "" && email != "" && phone != "" && reason != "" && info != "" && beenTo != "" && contact != "" ) {
-    //Add form submitted after backend is in place.
     alert("Information is Valid!");
     return false;
   }
@@ -20,7 +18,7 @@ function validateItems() {
   }
 }
 
-//Workaround as document.forms["contractForm"]["contract"] always returned blank.
+//Workaround as document.forms["contactForm"]["contrat"] always returned blank.
 //Checks to see if at least one checkbox is checked.
 //If at least one is checked returns true if none returns false
 function checkedOrNot(){

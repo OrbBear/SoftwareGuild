@@ -34,8 +34,8 @@ function validateItems(){
     var sumOfDice;
     //Result Variables
     var totalRolls = 0;
-    var highestAmountWon = 0;
-    var highestAmountRollCount;
+    var highestAmountWon = startingBet;
+    var highestAmountRollCount = 0;
     while (gameMoney > 0){
       //Roll 2 6 sided die.
       die1 = rollDice(6);
@@ -49,10 +49,12 @@ function validateItems(){
       else{
         gameMoney = gameMoney - 1;
       }
-      //I interpreted highest Amount Won as highest total cashroll.
-      //To get only winnings, you would subtract startingBet here i.e.:
-      //highestAmountWon = gameMoney - startingBet;
-      if (highestAmountWon < gameMoney){
+      //I interpreted highest Amount Won to be highest total bankroll as
+      //implied by the instructions and wireframe. You would need to declare
+      //highestAmountWon as 0, replace gameMoney in the if loop below with
+      //gameMoney-startingBet and round the final result on line 67 to return
+      //only money won (i.e. exclude startingBet from winnings)
+      if (highestAmountWon < (gameMoney)){
         highestAmountWon = gameMoney;
         highestAmountRollCount = totalRolls;
       }
@@ -60,7 +62,10 @@ function validateItems(){
     document.getElementById("results").style.display = "block";
     document.getElementById("startingBetResult").innerText = startingBet;
     document.getElementById("totalRollsResult").innerText = totalRolls;
+    //You would put return Math.round(highestAmountWon) below if calculating for
+    //Winnings only due to errors when subtracting floats.
     document.getElementById("highestAmountWonResult").innerText = highestAmountWon;
+    //Currently displays 0 for Roll Count at highest win if no winning rolls occur.
     document.getElementById("highestAmountRollCountResult").innerText = highestAmountRollCount;
     return false;
   }
